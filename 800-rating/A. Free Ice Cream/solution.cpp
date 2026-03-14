@@ -24,5 +24,5 @@ int main(){
             }
         }
     }
-    cout << initial_ice_cream << " " << distred_kid << endl;
+    cout << initial_ice_cream << " " << distressed_kid << endl;
 }
