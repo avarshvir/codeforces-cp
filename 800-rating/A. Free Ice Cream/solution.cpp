@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int people, initial_ice_cream;
+    int people; 
+    long long initial_ice_cream;
     cin >> people >>  initial_ice_cream;
     
     int distressed_kid = 0;
@@ -9,7 +10,7 @@ int main(){
     for(int i = 0; i < people; i++){
         char options;
         cin >> options;
-        int k;
+        long long k;
         cin >> k;
         //case 1: '+';
         
