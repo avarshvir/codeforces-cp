@@ -1,17 +1,12 @@
-n = int(input())
+import sys
 
-coins = []
+# In Python 2.7, raw_input() is preferred for reading strings
+n = int(raw_input())
 
-# Read all coins from one line, split by spaces
-coins_input = input().split()  # this gives a list of strings
+# map() is a quick way to convert the split strings to integers
+coins = map(int, raw_input().split())
 
-for coin in coins_input:
-    coins.append(int(coin))  # convert each to int and append
-
-total = 0
-for i in range(n):
-    total += coins[i]
-
+total = sum(coins)
 coins.sort(reverse=True)
 
 mysum = 0
@@ -20,7 +15,8 @@ count = 0
 for i in range(n):
     mysum += coins[i]
     count += 1
-    if mysum > total / 2:
+    # Compare against the actual remaining balance to avoid division issues
+    if mysum > (total - mysum):
         break
 
-print(count)
+print count
