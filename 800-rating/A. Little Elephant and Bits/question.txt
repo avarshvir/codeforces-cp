@@ -27,3 +27,4 @@ In the first sample the best strategy is to delete the second digit. That result
 
 In the second sample the best strategy is to delete the third or fourth digits — that results in number 110102 = 2610.
 
+---
